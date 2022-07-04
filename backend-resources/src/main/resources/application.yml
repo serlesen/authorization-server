@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  application.name: backend-resources
+  # the current backend is configured to be used as a resource server
+  # then, I must indicate the URI of the backend-auth to be used and which token to be used
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://backend-auth:8081

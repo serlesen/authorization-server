@@ -1,0 +1,30 @@
+server:
+  port: 8083
+
+spring:
+  application.name: backend-client
+  security:
+    oauth2:
+      client:
+        # available clients. One for OAuth2 and the other for OpenID Connect
+        # OpenID Connect is used in backend-client, but it relies on OAuth2
+        registration:
+          messages-client-oidc:
+            provider: spring
+            client-id: messages-client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://backend-client:8083/login/oauth2/code/{registrationId}"
+            scope: openid
+            client-name: messages-client-oidc
+          messages-client-authorization-code:
+            provider: spring
+            client-id: messages-client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://backend-client:8083/authorized"
+            scope: message.read
+            client-name: messages-client-authorization-code
+        provider:
+          spring:
+            issuer-uri: http://backend-auth:8081

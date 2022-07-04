@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sergio.auth</groupId>
+    <artifactId>authorization-server</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Authorization Server</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>backend-client</module>
+        <module>backend-auth</module>
+        <module>backend-resources</module>
+    </modules>
+
+</project>
