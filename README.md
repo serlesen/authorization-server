@@ -14,7 +14,7 @@ The following lines must be added in ```/etc/hosts``` to avoid having the browse
 URL overriding values from the different backends.
 ```
 127.0.0.1       backend-auth
-127.0.0.1       backend-client
+127.0.0.1       backend-gateway-client
 127.0.0.1       backend-resources
 ```
 
@@ -44,3 +44,14 @@ Facebook, Github...).
 On the top of that, OpenID Connect will send a richer information about the authenticated user from backend-auth to
 backend-client. This will reduce the communication between those to validate the identity and to obtain some 
 profile information.
+
+
+## Chapter 2
+
+In this second chapter I use an application built on top of Spring Cloud Gateway as the Client Server. This application
+will try to use the Resources Server using the OAuth2 protocol.
+
+Most of the time, the Resource Server and Authorization Server are existing applications which are consumed by hundreds
+and thousands of clients. The goal is the consume them from a custom application. I've chosen Spring Cloud Gateway as
+this is a common entry point in a microservice architecture.
+

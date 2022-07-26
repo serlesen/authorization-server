@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sergio.auth</groupId>
 	<artifactId>backend-auth</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>Authentication Backend</name>
 	<description>Authentication Server</description>
 	<properties>

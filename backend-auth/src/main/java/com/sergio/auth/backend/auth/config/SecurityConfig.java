@@ -64,16 +64,16 @@ public class SecurityConfig {
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
                 // client-id and client-secret that must be used from all the OAuth2 clients
-                .clientId("messages-client")
-                .clientSecret("$2a$12$/xdT4GByOtITcHq7SGtV.ORBMc.Vh3gu3nWz1IDuKxCiBBmG9aiLG")
-                // the Basic authentication method will be used between backend-client and backend-auth
+                .clientId("gateway-client-id")
+                .clientSecret("$2a$12$ZUamdYa4buAoIoxI6lGOMunBKesogEKoenlUSjCfyX8.y.x53HYUG")
+                // the Basic authentication method will be used between backend-gateway-client and backend-auth
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 // grant types to be used
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
                 // permitted redirect URI after the authentication is successful
-                .redirectUri("http://backend-client:8083/login/oauth2/code/messages-client-oidc")
-                .redirectUri("http://backend-client:8083/authorized")
+                .redirectUri("http://backend-gateway-client:8083/login/oauth2/code/gateway")
+                .redirectUri("http://backend-gateway-client:8083/authorized")
                 // acceptable scopes for the authorization
                 .scope(OidcScopes.OPENID)
                 .scope("message.read")

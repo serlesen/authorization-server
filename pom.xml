@@ -4,7 +4,7 @@
 
     <groupId>com.sergio.auth</groupId>
     <artifactId>authorization-server</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Authorization Server</name>
     <packaging>pom</packaging>
 
@@ -14,7 +14,7 @@
     </properties>
 
     <modules>
-        <module>backend-client</module>
+        <module>backend-gateway-client</module>
         <module>backend-auth</module>
         <module>backend-resources</module>
     </modules>

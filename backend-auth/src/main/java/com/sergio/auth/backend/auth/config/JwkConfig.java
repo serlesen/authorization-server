@@ -19,7 +19,7 @@ public class JwkConfig {
 
     /**
      * Keys to be used to generate the JWT.
-     * The JWT will be used to communicate between backend-auth and backend-resources once backend-client completed
+     * The JWT will be used to communicate between backend-auth and backend-resources once backend-gateway-client completed
      * the authentication.
      */
     @Bean
