@@ -55,3 +55,14 @@ Most of the time, the Resource Server and Authorization Server are existing appl
 and thousands of clients. The goal is the consume them from a custom application. I've chosen Spring Cloud Gateway as
 this is a common entry point in a microservice architecture.
 
+## Chapter 3
+
+In this third chapter I use Keycloak as the authorization server. Keycloak will list all the clients and users. All
+the authentication will be managed by Keycloak. I can easily add and configure clients, with their callback URLs, WebOrigins
+and authorization protocols.
+
+I can also add final users, manage their profile and password.
+
+In this chapter I will connect my Spring Cloud Gateway as a client server to Keycloak. Then, connecter my resources server
+to validate the JWT against Keycloak.
+

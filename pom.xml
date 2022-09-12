@@ -15,7 +15,6 @@
 
     <modules>
         <module>backend-gateway-client</module>
-        <module>backend-auth</module>
         <module>backend-resources</module>
     </modules>
 

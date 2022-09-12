@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sergio.auth</groupId>
 	<artifactId>backend-gateway-client</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>Backend Gateway Client</name>
 	<description>Backend Client with Spring Cloud Gateway</description>
 	<properties>

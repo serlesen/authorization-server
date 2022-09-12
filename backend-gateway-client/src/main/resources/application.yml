@@ -18,11 +18,11 @@ spring:
         registration:
           gateway:
             provider: my-provider
-            client-id: gateway-client-id
-            client-secret: my-secret
+            client-id: my_client
+            client-secret: q6jaO6zp9ay8zFGlGjpzwtp6nXW1Jj5C
             authorization-grant-type: authorization_code
             redirect-uri: "http://backend-gateway-client:8083/login/oauth2/code/{registrationId}"
             scope: openid, message.read
         provider:
           my-provider:
-            issuer-uri: http://backend-auth:8081
+            issuer-uri: http://backend-keycloak-auth:8080/auth/realms/my_realm
