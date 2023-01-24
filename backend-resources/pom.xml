@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sergio.auth</groupId>
 	<artifactId>backend-resources</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>Backend Resources</name>
 	<description>Backend which contains protected resources</description>
 	<properties>

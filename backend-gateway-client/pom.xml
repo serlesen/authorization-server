@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sergio.auth</groupId>
 	<artifactId>backend-gateway-client</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>Backend Gateway Client</name>
 	<description>Backend Client with Spring Cloud Gateway</description>
 	<properties>
@@ -21,10 +21,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 
 		<dependency>
